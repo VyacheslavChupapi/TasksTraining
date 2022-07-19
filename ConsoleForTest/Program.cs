@@ -6,7 +6,7 @@ namespace ConsoleForTest
     {
         static void Main(string[] args)
         {
-            
+
         }
     }
 }

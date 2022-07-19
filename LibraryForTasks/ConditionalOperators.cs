@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LibraryForTasks
 {
-    
+
 
     public class ConditionalOperators
     {
@@ -17,14 +17,7 @@ namespace LibraryForTasks
 
         public static bool MultiplicityСheck(int numeric, int divider)
         {
-            if (numeric % divider == 0)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+            return numeric % divider == 0;
         }
 
         public static int HourQuarter(int min)
@@ -124,5 +117,68 @@ namespace LibraryForTasks
             }
             return b > c ? c : b;
         }
+
+        public static int Сomparison(int a, int b)
+        {
+            int result;
+
+            if (a > b)
+            {
+                result = a + b;
+            }
+            else if (a == b)
+            {
+                result = a * b;
+            }
+            else
+            {
+                result = a - b;
+            }
+            return result;
+        }
+
+        public static Quarter PointCoordinates(int x, int y)
+        {
+            if (x > 0 || y > 0)
+            {
+                return Quarter.First;
+            }
+            else if (x > 0 || y < 0)
+            {
+                return Quarter.Second;
+            }
+            else if (x < 0 || y < 0)
+            {
+                return Quarter.Third;
+            }
+            else
+            {
+                return Quarter.Fourth;
+            }
+        }
+
+        public static void NumbersInAscendingOrder(ref int a, ref int b, ref int c)
+        {
+            if (a > b)
+            {
+                int temp = a;
+                a = b;
+                b = temp;
+            }
+            if (a > c)
+            {
+                int temp = a;
+                a = c;
+                c = temp;
+            }
+            if (b > c)
+            {
+                int temp = b;
+                b = c;
+                c = temp;
+            }
+        }
+
+
     }
 }
