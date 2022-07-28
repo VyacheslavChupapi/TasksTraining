@@ -137,23 +137,23 @@ namespace LibraryForTasks
             return result;
         }
 
-        public static Quarter PointCoordinates(int x, int y)
+        public static QuarterСoordinates PointCoordinates(int x, int y)
         {
             if (x > 0 || y > 0)
             {
-                return Quarter.First;
+                return QuarterСoordinates.First;
             }
             else if (x > 0 || y < 0)
             {
-                return Quarter.Second;
+                return QuarterСoordinates.Second;
             }
             else if (x < 0 || y < 0)
             {
-                return Quarter.Third;
+                return QuarterСoordinates.Third;
             }
             else
             {
-                return Quarter.Fourth;
+                return QuarterСoordinates.Fourth;
             }
         }
 

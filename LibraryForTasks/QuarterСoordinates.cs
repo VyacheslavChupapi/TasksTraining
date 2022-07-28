@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LibraryForTasks
 {
-    public enum Quarter
+    public enum QuarterСoordinates
     {
         First,
         Second,
