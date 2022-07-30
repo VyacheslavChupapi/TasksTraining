@@ -8,7 +8,7 @@ namespace LibraryForTasks
 {
     public class Cycle
     {
-        public static void SumOfIntegers()
+        public static void CwSumOfIntegers()
         {
             int sum = 0;
 
@@ -18,7 +18,7 @@ namespace LibraryForTasks
             }
         }
 
-        public static void CalculateSum()
+        public static void CwCalculateSum()
         {
             double sum = 0;
 
@@ -28,7 +28,7 @@ namespace LibraryForTasks
             }
         }
 
-        public static void MultiplicationTable()
+        public static void CwMultiplicationTable()
         {
             int result = 0;
 
@@ -41,7 +41,7 @@ namespace LibraryForTasks
             }
         }
 
-        public static void ASKII()
+        public static void CwASKII()
         {
             char askiiChar;
 
@@ -51,7 +51,7 @@ namespace LibraryForTasks
             }
         }
 
-        public static void DivisibleSum(int a, int b, int n)
+        public static void CwDivisibleSum(int a, int b, int n)
         {
             if (n != 0)
             {
@@ -66,17 +66,103 @@ namespace LibraryForTasks
             }
         }
 
-        public static void PeterAndIceCream(int n, int k)
+        public static void CwPeterAndIceCream(int n, int k)
         {
             int IceCreams = 0;
 
-            while(n >= k)
+            while (n >= k)
             {
-               n -= k;
-               ++IceCreams;
+                n -= k;
+                ++IceCreams;
             }
         }
 
-        // видеосос 02:42:30 досмотреть там задачи/
+        public static int HwAtoPowerB(int a, int b)
+        {
+            int result = 1;
+
+            for (int i = 0; i < b; i++)
+            {
+                result *= a;
+            }
+            return result;
+        }
+
+        public static void HwDivisibleNumbers(int a)
+        {
+            int result = 0;
+
+            for (int i = 1; i <= 1000; i++)
+            {
+                if (i % a == 0)
+                {
+                    result = i;
+                }
+            }
+        }
+
+        public static void HwSquareNumberLessThanInput(int a)
+        {
+            int result = 0;
+
+            for (int i = 1; i < a; i++)
+            {
+                if (Math.Pow(i, 2) < a)
+                {
+                    result = i;
+                }
+            }
+        }
+
+        public static int HwlargestDivisor(int a)
+        {
+             int result = 0;
+
+            for (int i = 1; i < a; i++)
+            {
+                if (a % i == 0)
+                {
+                    result = i;
+                }
+            }
+            return result;
+        }
+
+        public static int HwDivisibleSum(int a, int b)
+        {
+            int result = 0;
+
+            for (; a >= b; a--)
+            {
+                if (a % 7 == 0)
+                {
+                    result += a;
+                }
+            }
+
+            for (; a <= b; a++)
+            {
+                if (a % 7 == 0)
+                {
+                    result += a;
+                }
+            }
+
+            return result;
+        }
+
+        public static int HwFibonacciNumbers(int n)
+        {
+            int a = 0;
+            int b = 1;
+
+            for (int i = 0; i < n - 1; i++)
+            {
+                int temp = a;
+                a = b;
+                b = temp + b;
+            }
+            return a;
+        }
     }
 }
