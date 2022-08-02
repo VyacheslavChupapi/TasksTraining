@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LibraryForTasks
 {
-        public enum CharType
+        public enum EnumCharType
         {
             Digit,
             Letter,

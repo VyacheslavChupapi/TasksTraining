@@ -7,10 +7,10 @@
             return (a + b) / a;
         }
 
-        public static void Swap(ref string a, ref string b)
+        public static void Swap(ref int a, ref int b)
         {
-            string temp;
-            temp = a;
+            
+            int temp = a;
             a = b;
             b = temp;
         }

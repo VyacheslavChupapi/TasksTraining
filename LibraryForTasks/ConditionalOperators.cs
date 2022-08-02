@@ -80,19 +80,19 @@ namespace LibraryForTasks
             return Year % 4 == 0;
         }
 
-        public static CharType LetterOrNot(char a)
+        public static EnumCharType LetterOrNot(char a)
         {
             if (char.IsLetter(a))
             {
-                return CharType.Letter;
+                return EnumCharType.Letter;
             }
             else if (char.IsDigit(a))
             {
-                return CharType.Digit;
+                return EnumCharType.Digit;
             }
             else
             {
-                return CharType.Other;
+                return EnumCharType.Other;
             }
         }
 
@@ -137,23 +137,23 @@ namespace LibraryForTasks
             return result;
         }
 
-        public static QuarterСoordinates PointCoordinates(int x, int y)
+        public static EnumQuarterСoordinates PointCoordinates(int x, int y)
         {
             if (x > 0 || y > 0)
             {
-                return QuarterСoordinates.First;
+                return EnumQuarterСoordinates.First;
             }
             else if (x > 0 || y < 0)
             {
-                return QuarterСoordinates.Second;
+                return EnumQuarterСoordinates.Second;
             }
             else if (x < 0 || y < 0)
             {
-                return QuarterСoordinates.Third;
+                return EnumQuarterСoordinates.Third;
             }
             else
             {
-                return QuarterСoordinates.Fourth;
+                return EnumQuarterСoordinates.Fourth;
             }
         }
 

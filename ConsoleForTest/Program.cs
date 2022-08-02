@@ -6,19 +6,15 @@ namespace ConsoleForTest
     {
         static void Main(string[] args)
         {
-            int n = Convert.ToInt32(Console.ReadLine());
+            //int a = Convert.ToInt32(Console.ReadLine());
+            //int b = Convert.ToInt32(Console.ReadLine());
 
-            int a = 0;
-            int b = 1;
+            //Console.WriteLine(Cycle.HwDivisibleSum(a, b));
 
-            for (int i = 0; i < n - 1; i++)
+            for (int i = 0; i <= 100; i++)
             {
-                int temp = a;
-                a = b;
-                b = temp + b;
-                Console.Write(a);
+                Console.WriteLine($"{i} = {Cycle.HwlargestDivisor(i)}");
             }
-            
 
         }
     }
