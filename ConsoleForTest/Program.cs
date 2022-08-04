@@ -10,13 +10,26 @@ namespace ConsoleForTest
             //int b = Convert.ToInt32(Console.ReadLine());
 
             //Console.WriteLine(Cycle.HwDivisibleSum(a, b));
+            int length = Convert.ToInt32(Console.ReadLine());
 
-            for (int i = 0; i <= 100; i++)
+            int[] arr = new int[length];
+            Random random = new Random();
+            for (int i = 0; i < length; i++)
             {
-                Console.WriteLine($"{i} = {Cycle.HwlargestDivisor(i)}");
+                arr[i] = random.Next(-50, 50);
             }
 
+            for (int i = 0; i < length; i++)
+            {
+                Console.Write(arr[i] + " ");
+            }
+
+            Console.WriteLine(string.Empty);
+            Arrays.CwModifyArray(arr);
+            for (int i = 0; i < length; i++)
+            {
+                Console.Write(arr[i] + " ");
+            }
         }
     }
-    
 }
