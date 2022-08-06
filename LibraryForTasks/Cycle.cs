@@ -158,5 +158,29 @@ namespace LibraryForTasks
 
             return a;
         }
+
+        public static int HwFindGreatestCommonDivisorEuclideanAlgorithm(int a, int b)
+        {
+            do
+            {
+                if (a > b)
+                {
+                    a -= b;
+                }
+                else
+                {
+                    b -= a;
+                }
+            } while (a != b);
+
+            return b;
+        }
+
+        public static void HwFindNByHalfDivision(int a)
+        {
+ 
+        }
+
+
     }
 }

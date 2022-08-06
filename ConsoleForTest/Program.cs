@@ -6,30 +6,26 @@ namespace ConsoleForTest
     {
         static void Main(string[] args)
         {
-            //int a = Convert.ToInt32(Console.ReadLine());
-            //int b = Convert.ToInt32(Console.ReadLine());
+            int a = Convert.ToInt32(Console.ReadLine());
+            int b = Convert.ToInt32(Console.ReadLine());
 
-            //Console.WriteLine(Cycle.HwDivisibleSum(a, b));
-            int length = Convert.ToInt32(Console.ReadLine());
+            
 
-            int[] arr = new int[length];
-            Random random = new Random();
-            for (int i = 0; i < length; i++)
-            {
-                arr[i] = random.Next(-50, 50);
-            }
 
-            for (int i = 0; i < length; i++)
-            {
-                Console.Write(arr[i] + " ");
-            }
+            //int length = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine(string.Empty);
-            Arrays.CwModifyArray(arr);
-            for (int i = 0; i < length; i++)
-            {
-                Console.Write(arr[i] + " ");
-            }
+            //int[] arr = new int[length];
+            //Random random = new Random();
+            //for (int i = 0; i < length; i++)
+            //{
+            //    arr[i] = random.Next(-50, 50);
+            //}
+
+            //for (int i = 0; i < length; i++)
+            //{
+            //    Console.Write(arr[i] + " ");
+            //}
+
         }
     }
 }
